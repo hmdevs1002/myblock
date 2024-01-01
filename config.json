@@ -17,7 +17,7 @@
         },
                 {
             "source":"https://feodotracker.abuse.ch/downloads/ipblocklist_aggressive.txt",
-            "type":"adblock",
+            "type":"hosts",
             "transformations":[
                 "RemoveComments",
                 "Compress",
@@ -31,7 +31,7 @@
         },
                         {
             "source":"https://sslbl.abuse.ch/blacklist/sslipblacklist_aggressive.txt",
-            "type":"adblock",
+            "type":"hosts",
             "transformations":[
                 "RemoveComments",
                 "Compress",
