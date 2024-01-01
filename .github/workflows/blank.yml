@@ -32,7 +32,7 @@ jobs:
           git add domains.txt
           git commit -m 'Update domains.txt'
           # Bu komut, yerel repodaki değişiklikleri uzak repoya yazar
-          git push https://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@github.com/hmdevs1002/AdvancedBlock.git
+          git push https://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@github.com/hmdevs1002/myblock.git
 
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
