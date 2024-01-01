@@ -1,0 +1,29 @@
+{
+    "name":"Advanced Block",
+    "sources":[
+        {
+            "source":"https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt",
+            "type":"hosts",
+            "transformations":[
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "RemoveModifiers",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines",
+                "InsertFinalNewLine"
+            ]
+        }
+    ],
+    "transformations":[
+        "RemoveComments",
+        "Compress",
+        "Deduplicate",
+        "RemoveModifiers",
+        "Validate",
+        "RemoveEmptyLines",
+        "TrimLines",
+        "InsertFinalNewLine"
+    ]
+}
