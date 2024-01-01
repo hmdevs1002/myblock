@@ -1,0 +1,38 @@
+# Bu GitHub Action, repodaki "main" branch'e push veya pull request yapıldığında veya manuel olarak tetiklendiğinde çalışır
+name: Download and extract domains
+on:
+  schedule:
+    # Bu iş akışı her saat başı çalışır
+    - cron: '0 * * * *'
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  download-and-extract:
+    # Bu iş, Ubuntu-latest ortamında çalışır
+    runs-on: ubuntu-latest
+    steps:
+      # Bu adım, repoyu çalışma alanına klonlar
+      - name: Checkout
+        uses: actions/checkout@v3
+      # Bu adım, @adguard/hostlist-compiler paketini global olarak kurar
+      - name: Install hostlist-compiler
+        run: npm i -g @adguard/hostlist-compiler
+      # Bu adım, config.json dosyasını okur ve reklam engelleyici domainleri içeren domains.txt dosyasını oluşturur
+      - name: Compile domains
+        run: hostlist-compiler -c config.json -o domains.txt
+      # Bu adım, domains.txt dosyasını repoya yükler
+      - name: Commit and push
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add domains.txt
+          git commit -m 'Update domains.txt'
+          # Bu komut, yerel repodaki değişiklikleri uzak repoya yazar
+          git push https://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@github.com/hmdevs1002/AdvancedBlock.git
+
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
