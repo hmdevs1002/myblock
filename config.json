@@ -14,6 +14,34 @@
                 "TrimLines",
                 "InsertFinalNewLine"
             ]
+        },
+                {
+            "source":"https://feodotracker.abuse.ch/downloads/ipblocklist_aggressive.txt",
+            "type":"adblock",
+            "transformations":[
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "RemoveModifiers",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines",
+                "InsertFinalNewLine"
+            ]
+        },
+                        {
+            "source":"https://sslbl.abuse.ch/blacklist/sslipblacklist_aggressive.txt",
+            "type":"adblock",
+            "transformations":[
+                "RemoveComments",
+                "Compress",
+                "Deduplicate",
+                "RemoveModifiers",
+                "Validate",
+                "RemoveEmptyLines",
+                "TrimLines",
+                "InsertFinalNewLine"
+            ]
         }
     ],
     "transformations":[
