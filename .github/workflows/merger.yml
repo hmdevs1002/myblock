@@ -1,4 +1,4 @@
-# Bu GitHub Action, repodaki "main" branch'e push veya pull request yapıldığında veya manuel olarak tetiklendiğinde çalışır
+#  Bu GitHub Action, repodaki "main" branch'e push veya pull request yapıldığında veya manuel olarak tetiklendiğinde çalışır
 name: Download and extract domains
 on:
   schedule:
