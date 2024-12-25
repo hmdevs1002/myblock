@@ -1,7 +1,7 @@
 !
-! Checksum: Ii9B646sSm3//6QS9vEs8Q
+! Checksum: WoBELmdkT0TvttpotcGYew
 ! Title: Advanced Block
-! Last modified: 2024-12-25T02:48:48.706Z
+! Last modified: 2024-12-25T03:23:55.491Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.31
 !
