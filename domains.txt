@@ -1,6 +1,6 @@
-! Checksum: DmvfP13/X23SBHwnd/uMuQ
+! Checksum: nvyXSRFzeOGHaoDQRUCBCA
 ! Title: Advanced Block
-! Last modified: 2024-12-28T15:18:22.148Z
+! Last modified: 2024-12-28T16:22:46.582Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.33
 !
