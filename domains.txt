@@ -1,6 +1,6 @@
-! Checksum: iPo+E0bz61INHH7kxRJzRQ
+! Checksum: lpaOfMbf7Jscnn0hPJ3CVg
 ! Title: Advanced Block
-! Last modified: 2025-01-03T01:37:53.815Z
+! Last modified: 2025-01-03T02:50:39.749Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.33
 !
