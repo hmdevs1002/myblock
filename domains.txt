@@ -1,6 +1,6 @@
 !
 ! Title: Advanced Block
-! Last modified: 2025-08-13T14:24:36.362Z
+! Last modified: 2025-08-13T15:22:05.836Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.39
 !
